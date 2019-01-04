@@ -1,0 +1,5 @@
+someVar1 : !!com.sample.ChildClassOne {}
+someVar2 : !!com.sample.ChildClassTwo {}
+
+#roles:
+#  -id : FirstID
