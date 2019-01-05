@@ -5,17 +5,13 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @NoArgsConstructor
-public class Configuration {
+public class SampleObjectClass {
     @Getter
     @Setter
-    ClassOne someVar1;
+    String appName;
 
     @Getter
     @Setter
-    ClassTwo someVar2;
-
-    @Getter
-    @Setter
-    RoleConfigurations[] roles;
+    Object[] objectArray;
 
 }

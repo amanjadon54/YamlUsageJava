@@ -1,5 +1,28 @@
-someVar1 : !!com.sample.ChildClassOne {}
-someVar2 : !!com.sample.ChildClassTwo {}
+someVar1: !!com.sample.ChildClassOne {}
+someVar2: !!com.sample.ChildClassTwo {}
 
-#roles:
-#  -id : FirstID
+roles:
+  - id: FirstID
+    services:
+      - !!com.sample.SampleObjectClass
+        appName: sampleAppName
+        objectArray:
+          - "value1"
+          - "value2"
+  #
+  - id: SecondId
+    services:
+      - !!com.sample.SampleObjectClass
+        appName: sampleAppName2
+        objectArray:
+          - "value3"
+          - "value4"
+
+
+  - id: ThirdId
+    services:
+      - !!com.sample.SampleObjectClass
+        appName: sampleAppName3
+        objectArray:
+          - "value5"
+          - "value6"
